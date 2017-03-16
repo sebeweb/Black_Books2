@@ -151,6 +151,7 @@ class Copy implements \JsonSerializable{
 
     public function jsonSerialize() {
         return array(
+            "id"=> $this->id,
             "bookTitle"=> $this->book->getTitle(),
             "state"=> $this->state,
             "status"=> $this->status,

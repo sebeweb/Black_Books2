@@ -1,6 +1,6 @@
 $(document).ready(function () {
  
-    getHeaderLine();
+//    getHeaderLine();
     getNavBar();
 });
 
@@ -14,7 +14,8 @@ function getHeaderLine() {
 }
 function getNavBar() {
     var nav = $("nav").append("<ul></ul>");
-    $("ul").append("<li><a>Consulter livre</a></li>");
+    $("ul").append("<li><a id='showBooks'>Consulter livre</a></li>");
+    $("ul").append("<li><a id='consultExemplaire'>Consulter exemplaire</a></li>");
     $("ul").append("<li><a>Ajout exemplaire</a></li>");
     $("ul").append("<li><a>Ajout livre</a></li>");
     $("ul").append("<li><a>Ajout auteur</a></li>");

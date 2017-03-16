@@ -9,17 +9,24 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
-        <div class="container-fluid">
+    <div class="container-fluid">
         <nav class="col-xs-3">
-
+            <ul>
+                <li><button id="showBooks">Consulter livre</button></li>
+                <li><button id="consultExemplaire">Consulter exemplaire</button></li>
+            </ul>
         </nav>
-            {% block body %}{% endblock %}
-        
-    </div>
+    {% block body %}{% endblock %}
+
+</div>
 
 {% block javascripts %}{% endblock %}
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="{{asset('/script/ajax.js')}}"></script>
+{#<script src="{{asset('/script/uix.js')}}"></script>#}
+<script src="{{asset('/script/init.js')}}"></script>
+<script src="{{asset('/script/consulting_request.js')}}"></script>
+<script src="{{asset('/script/rendering.js')}}"></script>
+<script src="{{asset('/script/app.js')}}"></script>
 </body>
 </html>

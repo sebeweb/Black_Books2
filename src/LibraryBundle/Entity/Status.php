@@ -61,7 +61,8 @@ class Status implements \JsonSerializable {
 
     public function jsonSerialize() {
         return array(
-            "status" => $this->name
+            "status" => $this->name,
+            "id" => $this->id
         );
     }
 
