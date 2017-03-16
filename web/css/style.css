@@ -1,0 +1,10 @@
+.container-fluid{
+    padding-top: 50px;
+}
+ul{
+    list-style-type: none;
+}
+
+th{
+    border: #000 solid 2px;
+}
